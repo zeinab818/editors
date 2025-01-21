@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body{
+    background: #333;
+}
+
+.container{
+    background: #261d1d;
+    width: 80vw;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img ,canvas{
+    max-width:45vw ;
+    max-height: 45vh;
+}
+
+.upload input{
+    display: none;
+
+}
+
+.upload label{
+    color: white;
+    border: 2px white dashed;
+    padding: 8px 20px;
+    cursor: pointer;
+
+}
+
+
+.filters ul ,
+.filters ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    direction: rtl;
+}
+
+
+
+.filters ul li label{
+    color: white;
+    text-transform: capitalize;
+
+    
+}
+
+.filters ul li:last-child{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.filters ul li a ,span{
+    color: white;
+    padding: 6px 10px;
+    background: rgb(4, 83, 4);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:650px){
+    .container{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .imgimg,canvas{
+        max-width: 80vw;
+    }
+}
